@@ -234,7 +234,6 @@ def process_images_handler():
     return jsonify({'processed_images': processed_images})
 
 
-
 @app.route('/ping', methods=['GET'])
 def ping():
         # Return a 200 status code for a healthy container
@@ -248,4 +247,3 @@ def invocations():
     
 if __name__ == '__main__':
   app.run(debug=True, port=8080)
-
